@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyenDoiNhietDo</title>
+</head>
+<body>
+<h1>Temperrature Converter</h1>
+<p>Type a value in the Fahrenheit field to convert </p>
+<label for="fahren">Fahrenheit</label>
+<input type="number" id="fahren" placeholder="Nhap do F" oninput="temConvert(this.value)"><br>
+<p>Celcius: <span id="result"></span></p>
+
+<script>
+    function temConvert(num) {
+        num = parseFloat(num);
+        document.getElementById("result").innerHTML = ((num-32)/1.8).toFixed(3);
+    }
+
+
+
+</script>
+</body>
+</html>
